@@ -1,0 +1,90 @@
+﻿<Window x:Class="AplikasiPresensi.View.PreviewSiswaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AplikasiPresensi.View"
+        mc:Ignorable="d"
+        Title="PreviewSiswaWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <Label Content="Detail Data Siswa" FontSize="16" FontWeight="DemiBold" Grid.Row="0"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <!-- Kolom 0 -->
+            <Label Content="NISN" Grid.Row="0" Grid.Column="0"/>
+            <Label Content="Nama Siswa" Grid.Row="1" Grid.Column="0"/>
+            <Label Content="Jenis Kelamin" Grid.Row="2" Grid.Column="0"/>
+            <Label Content="Tempat Lahir" Grid.Row="3" Grid.Column="0"/>
+            <Label Content="Tanggal Lahir" Grid.Row="4" Grid.Column="0"/>
+            <Label Content="Foto" Grid.Row="5" Grid.Column="0"/>
+            <!--Kolom 1-->
+            <TextBox x:Name="txtNISN" Grid.Row="0" Grid.Column="1" Width="100"
+                     HorizontalAlignment="Left" Margin="10,5,30,5"/>
+            <TextBox x:Name="txtNama" Grid.Row="1" Grid.Column="1"
+                     Margin="10,5,30,5"/>
+            <Grid Grid.Row="2" Grid.Column="1" Margin="10,7,30,5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <RadioButton x:Name="rdbLaki" Content="Laki-laki"
+                             IsChecked="True"/>
+                <RadioButton x:Name="rdbPerempuan" Content="Perempuan"
+                             Grid.Column="1"/>
+            </Grid>
+            <TextBox x:Name="txtTempatLahir" Grid.Row="3" Grid.Column="1"
+                     Margin="10,5,30,5" Width="150" HorizontalAlignment="Left"/>
+            <DatePicker x:Name="dtpTanggal" Grid.Row="4" Grid.Column="1"
+                        Margin="10,5,30,5" Width="150" HorizontalAlignment="Left"/>
+            <Image x:Name="imgFoto" Source="{Binding}" Grid.Row="5"
+                   Grid.Column="1" Height="120" Width="90"
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Top" Margin="10,5,30,5"/>
+            <!-- Kolom 3 -->
+            <Label Content="Alamat Siswa" Grid.Row="0" Grid.Column="2"/>
+            <Label Content="Nama Ibu" Grid.Row="1" Grid.Column="2"/>
+            <Label Content="Nama Ayah" Grid.Row="2" Grid.Column="2"/>
+            <Label Content="Alamat Orang Tua" Grid.Row="3" Grid.Column="2"/>
+            <Label Content="Telp" Grid.Row="4" Grid.Column="2"/>
+            <!-- Kolom 4 -->
+            <TextBox x:Name="txtAlamatSiswa" Grid.Row="0" Grid.Column="4"
+                     Margin="10,5,0,5"/>
+            <TextBox x:Name="txtNamaIbu" Grid.Row="1" Grid.Column="4"
+                     Margin="10,5,30,5"/>
+            <TextBox x:Name="txtNamaAyah" Grid.Row="2" Grid.Column="4"
+                     Margin="10,5,30,5"/>
+            <TextBox x:Name="txtAlamatOrtu" Grid.Row="3" Grid.Column="4"
+                     Margin="10,5,0,5"/>
+            <TextBox x:Name="txtTelp" Grid.Row="4" Grid.Column="4"
+                     Margin="10,5,0,5" Width="150" HorizontalAlignment="Left"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnClose" Content="Tutup" 
+                    Background="#9732C7" Foreground="White"
+                    Height="27" Width="80" HorizontalAlignment="Left"
+                    Grid.Column="1" Click="btnClose_Click"/>
+        </Grid>
+    </Grid>
+</Window>
