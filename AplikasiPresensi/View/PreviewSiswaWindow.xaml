@@ -52,12 +52,13 @@
             </Grid>
             <TextBox x:Name="txtTempatLahir" Grid.Row="3" Grid.Column="1"
                      Margin="10,5,30,5" Width="150" HorizontalAlignment="Left"/>
-            <DatePicker x:Name="dtpTanggal" Grid.Row="4" Grid.Column="1"
+            <TextBox x:Name="txtTanggal" Grid.Row="4" Grid.Column="1"
                         Margin="10,5,30,5" Width="150" HorizontalAlignment="Left"/>
-            <Image x:Name="imgFoto" Source="{Binding}" Grid.Row="5"
+            <Image x:Name="imgFoto" Source="/Foto/NoImage.png" Grid.Row="5"
                    Grid.Column="1" Height="120" Width="90"
                    HorizontalAlignment="Left"
-                   VerticalAlignment="Top" Margin="10,5,30,5"/>
+                   VerticalAlignment="Top" Margin="10,5,30,5"
+                   Stretch="Uniform"/>
             <!-- Kolom 3 -->
             <Label Content="Alamat Siswa" Grid.Row="0" Grid.Column="2"/>
             <Label Content="Nama Ibu" Grid.Row="1" Grid.Column="2"/>

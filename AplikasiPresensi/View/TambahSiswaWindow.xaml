@@ -75,6 +75,10 @@
                      Margin="10,5,0,5"/>
             <TextBox x:Name="txtTelp" Grid.Row="4" Grid.Column="4"
                      Margin="10,5,0,5" Width="150" HorizontalAlignment="Left"/>
+            <Button x:Name="btnBrowse" Content="Browse" 
+                Background="#9732C7" Foreground="White"
+                Height="27" Width="80" HorizontalAlignment="Left"
+                Grid.Column="1" Click="btnBrowse_Click" Margin="135,20,0,68" Grid.Row="5"/>
         </Grid>
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
@@ -85,11 +89,12 @@
             <Button x:Name="btnSimpan" Content="Simpan" 
                     Background="#9732C7" Foreground="White"
                     Height="27" Width="80" HorizontalAlignment="Left"
-                    Grid.Column="1"/>
+                    Grid.Column="1" Click="btnSimpan_Click"/>
             <Button x:Name="btnCancel" Content="Cancel" 
                     Background="#9732C7" Foreground="White"
                     Height="27" Width="80" HorizontalAlignment="Left"
                     Grid.Column="2" Click="btnCancel_Click"/>
         </Grid>
+        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="829,180,0,0" Grid.Row="1" VerticalAlignment="Top" Width="0"/>
     </Grid>
 </Window>

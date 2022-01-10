@@ -7,6 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Foto\0019230171.jpg" />
+    <None Remove="Foto\0019230182.jpg" />
+    <None Remove="Foto\0019230894.jpg" />
+    <None Remove="Foto\0019231074.jpg" />
+    <None Remove="Foto\0019240421.jpg" />
+    <None Remove="Foto\0019241622.jpg" />
+    <None Remove="Foto\0019241665.jpg" />
+    <None Remove="Foto\0019250002.jpg" />
+    <None Remove="Foto\0019250341.jpg" />
+    <None Remove="Foto\0019251097.jpg" />
+    <None Remove="Foto\0019260036.jpg" />
+    <None Remove="Foto\0019260128.jpg" />
+    <None Remove="Foto\0019270059.jpg" />
+    <None Remove="Foto\0019271341.jpg" />
+    <None Remove="Foto\0019280122.jpg" />
+    <None Remove="Foto\0019280595.jpg" />
+    <None Remove="Foto\0019281213.jpg" />
+    <None Remove="Foto\0019282006.jpg" />
+    <None Remove="Foto\0019290012.jpg" />
+    <None Remove="Foto\0019293103.jpg" />
+    <None Remove="Foto\NoImage.png" />
     <None Remove="Icon\Account.png" />
     <None Remove="Icon\Home.png" />
     <None Remove="Icon\Picture1.png" />
@@ -14,6 +35,72 @@
     <None Remove="Icon\Picture3.png" />
     <None Remove="Icon\Presensi.png" />
     <None Remove="Icon\Student.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Foto\0019230171.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019230182.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019230894.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019231074.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019240421.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019241622.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019241665.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019250002.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019250341.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019251097.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019260036.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019260128.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019270059.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019271341.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019280122.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019280595.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019281213.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019282006.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019290012.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\0019293103.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Foto\NoImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <ItemGroup>

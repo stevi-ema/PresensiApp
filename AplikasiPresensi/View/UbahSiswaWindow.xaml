@@ -37,7 +37,7 @@
             <Label Content="Foto" Grid.Row="5" Grid.Column="0"/>
             <!--Kolom 1-->
             <TextBox x:Name="txtNISN" Grid.Row="0" Grid.Column="1" Width="100"
-                     HorizontalAlignment="Left" Margin="10,5,30,5"/>
+                     HorizontalAlignment="Left" Margin="10,5,30,5" IsReadOnly="True"/>
             <TextBox x:Name="txtNama" Grid.Row="1" Grid.Column="1"
                      Margin="10,5,30,5"/>
             <Grid Grid.Row="2" Grid.Column="1" Margin="10,7,30,5">
@@ -54,10 +54,17 @@
                      Margin="10,5,30,5" Width="150" HorizontalAlignment="Left"/>
             <DatePicker x:Name="dtpTanggal" Grid.Row="4" Grid.Column="1"
                         Margin="10,5,30,5" Width="150" HorizontalAlignment="Left"/>
-            <Image x:Name="imgFoto" Source="{Binding}" Grid.Row="5"
-                   Grid.Column="1" Height="120" Width="90"
+            <DockPanel Grid.Row="5" Grid.Column="1">
+                <Image x:Name="imgFoto" Source="{Binding}" 
+                    Height="120" Width="90"
                    HorizontalAlignment="Left"
                    VerticalAlignment="Top" Margin="10,5,30,5"/>
+
+                <Button x:Name="btnBrowse" Content="Browse" 
+                    Background="#9732C7" Foreground="White"
+                    Height="27" Width="80" HorizontalAlignment="Left"
+                    Grid.Column="1" Click="btnBrowse_Click"/>
+            </DockPanel>
             <!-- Kolom 3 -->
             <Label Content="Alamat Siswa" Grid.Row="0" Grid.Column="2"/>
             <Label Content="Nama Ibu" Grid.Row="1" Grid.Column="2"/>
@@ -85,7 +92,7 @@
             <Button x:Name="btnSimpan" Content="Simpan" 
                     Background="#9732C7" Foreground="White"
                     Height="27" Width="80" HorizontalAlignment="Left"
-                    Grid.Column="1"/>
+                    Grid.Column="1" Click="btnSimpan_Click"/>
             <Button x:Name="btnCancel" Content="Cancel" 
                     Background="#9732C7" Foreground="White"
                     Height="27" Width="80" HorizontalAlignment="Left"
